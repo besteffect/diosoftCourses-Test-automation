@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name = "Test TestNG" default="compile" basedir=".">
+	<!--scr- относительный путь к папке source-->
+	<property name="src.dir" value="${basedir}/src/" />
+	<property name="bin.dir" value="${basedir}/bin/"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
+
+	<taskdef resource="testngtasks" classpath="${lib.dir}/testng.jar"/> <!--подключение антовской библиотеки testNG-->
+
+	<target name="Hi!">
+		<echo>Hello!  Test is starting! </echo>
+	</target>
+
+	<fileset id="testng_libs" dir="${lib.dir}">
+		<include name="**/*.jar"/>
+	</fileset>
+
+	<path id="myClasspath">
+		<fileset refid="testng_libs"/>
+		<pathelement path="${bin.dir}"/>
+	</path>
+
+	<target name="delete"> <!--удаление папок bin и reports-->
+		<delete dir="${bin.dir}"/>
+	</target>
+
+	<target name="init"> <!--оздание папки bin-->
+		<mkdir dir="${bin.dir}"/>
+	</target>
+
+	<target name="run-test" depends="compile"> <!--компилирование кода: всех .java файлов в папке src, байт коды кладутся в bin-->
+		<testng outputdir="${bin.dir}/reports" classpathref="myClasspath"/>
+	</target>
+
+	<target name="compile" depends="init"> <!--запуск тестов-->
+		<javac  includeantruntime="false"
+				srcdir="${src.dir}"
+				destdir="${bin.dir}"
+				classpathref="myClasspath"
+				encoding="UTF-8">
+		</javac>
+	</target>
+
+</project>
+

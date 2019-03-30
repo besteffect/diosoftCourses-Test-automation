@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project name = "Level1Junit" default="build" basedir=".">
+	<property name = "lib" value = "${basedir}/lib"/>
+	<property name = "bin" value = "${basedir}/bin"/>
+	<property name = "src" value = "${basedir}/src"/>
+	<property name = "reports" value = "${basedir}/reports"/>
+	<property name = "message" value="is in progress..."/>	
+	<taskdef resource="testngtasks" classpath="${lib}/testng-6.8.jar"/> <!--подключение антовской библиотеки testNG-->
+	 <path id="classpath"> <!--задаем classpath-->
+	      <fileset dir="lib">
+	        <include name="**/*.jar"/>
+	      </fileset>
+	 	<path path = "${bin}"/> 
+	  </path>
+    <target name="build" description="Run build target" depends="run_testcases"> 
+    	<echo message="build ${message}"/>
+    </target>	
+	<target name="clean" description="Remove bin folder"> <!--удаление папок bin и reports-->
+		<delete dir="${bin}"/>
+		<delete dir="${reports}"/>
+	</target>
+	<target name="create_bin" description="Create bin folder" depends="clean"> <!--удаление создание папки bin-->
+		<mkdir dir="${bin}"/>
+	</target>
+	<target name="compile" description="Run compile target" depends="create_bin"> <!--компилирование кода: всех .java файлов в папке src, байт коды кладутся в bin-->
+		<javac srcdir="${src}" destdir="${bin}" classpathref="classpath" includeantruntime="false">
+		  <include name="**/*.java"/>
+		</javac>
+	</target>	
+  	<target name="run_testcases" depends="compile"> <!--запуск тестов-->
+		<testng outputdir="${reports}" classpathref="classpath"> 
+      		<xmlfileset dir="${basedir}" includes="testng.xml"/> 
+    	</testng>
+   	</target>
+</project>
+
