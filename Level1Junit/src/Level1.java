@@ -58,6 +58,7 @@ public class Level1 {
     }
 
     //3 В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
+    //3 Array of integers has elements with 0 values. Create an array with numbers of these elements
     public static int[] countOfZeronumbersinarray(int[] array) {
        // int[] array = {0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0};
         int j = 0;
@@ -82,6 +83,7 @@ public class Level1 {
     }
 
     //4 Дан целочисленный массив чисел (положительных и отрицательных). Выяснить, какое число встречается раньше – положительное или отрицательное.
+    //4 Array of integers is given (positive and negative numbers). Define which number apperas first - positive or negative.
     public static String findWhichIsFirstPositiveorNegative(int[] array) {
         // int[] array = {0, 0, -2, -4, 24, 53};
         int firstNumber = 0;
@@ -104,10 +106,11 @@ public class Level1 {
 
 
     //5 Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.
+    // 5 Array of int is given. Find out if it is ascending
     public static String isArraySorted(int[]array) {
       //  int[] array = {7, 8, 12, 22, 33, 51, 63, 64, 55}; //creating array
         boolean isSorted = false;
-        String result1=null;
+        String result=null;
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 isSorted = false;
@@ -116,15 +119,16 @@ public class Level1 {
         }
         if (isSorted == true) {
             System.out.println("Array is sorted");
-            result1 = "Array is sorted";
+            result = "Array is sorted";
         } else {
             System.out.println("Array is not sorted");
-            result1 = "Array is not sorted";
+            result = "Array is not sorted";
         }
-        return result1;
+        return result;
     }
 
     // 6 Дан массив чисел. Создать массив из четных чисел этого массива. Если таких чисел нет, то вывести сообщение об этом факте.
+    // 6 Array of int is given. Create an array with even numbers of this array. If there are no such numbers, print a message about it
     public static int[] createArrayOfEvenNumbers(int[] array) {
        // int[] array = {1, 1, 2, 32, 1, 3, 51, 21};
         int b = 0;
@@ -132,13 +136,13 @@ public class Level1 {
         //boolean noEvenNumbers = false;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                b++;  // b is the variable for counting the number of zeros in array
+                b++;  // b is the variable for counting the number of even numbers in array
             }
         }
         int[] array1 = new int[b]; // creating new array1 with b - the number of elements in this array
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                array1[j] = array[i]; //filling in array3 with values
+                array1[j] = array[i]; //filling in array1 with values
                 j++; // incrementally increase
             }
         }
@@ -148,10 +152,11 @@ public class Level1 {
         if (b == 0) {
             System.out.println("Here are no even number");
         }
-        return array1;// доделать для случая если таких чисел нет
+        return array1;
     }
 
     //7. Дан массив чисел. Заменить все его элементы, большие данного числа Z, этим числом. Подсчитать количество замен.
+    //7. Array of int is given. Replace all its elements that are >z with z. Calculate the number of substitutions
     /*
     Java:
     1) Я могу изменять существующие элементы массива путем присвоения элементу нового значения. Например, array[3]=6 в массиве ниже заменит 4 на 6.
@@ -183,6 +188,7 @@ public class Level1 {
     }
 
     //8. Дан массив чисел. Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.
+    //8. Array of int is given. Calculate the number of negative, positive and 0 elements.
     /*
     Java:
     1. (array[i] = 0) это присваивание(инициализация). Это сравнение (array[i] == 0)
@@ -213,6 +219,7 @@ public class Level1 {
     }
 
     // 9. Дан массив чисел. Поменять местами наибольший и наименьший элементы.
+    // 9 Array of integers ig given. Reverse the biggest and the smallest elements
     public static int[] changeBiggestWithSmallest(int[] array) {
        // int[] array = {1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76};
         int biggest = array[0];
@@ -240,7 +247,8 @@ public class Level1 {
         return array;
     }
 
-    //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2- значит 1-й элемент массива равен
+    //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 1-й элемент массива равен 2
+    // With given array of int, print only numbers which qualify the condition arr[i]<=i
     public static int[] printOnlyArrayIisLessOrEqualToI(int[] array) {
        // int[] array = {25, 1, 2, 1, 2, 1, 4, 11, 44};
         int count=0;
@@ -262,6 +270,7 @@ public class Level1 {
     }
 
     //11. Дан массив чисел. Вывести те числа, у которых остаток от деления на число М равно L.
+    //11. Array of int is given. Print numbers, where remainder of division by M equals to L.
     public static int[] printAllModuleEqualsM(int[] array, int m, int l) {
         int count = 0;
         int count1 = 0;
@@ -274,7 +283,7 @@ public class Level1 {
         System.out.println("New count " + count);
         int[] array1 = new int[count];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % m == l) {  // тут я делю по модулю числа из массива array[i] на m и сравниваю остаток с L
+            if (array[i] % m == l) {
                 array1[count1] = array[i];
                 count1 = count1 + 1;
             }
