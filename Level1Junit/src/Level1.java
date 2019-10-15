@@ -41,12 +41,13 @@ public class Level1 {
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
+    // 2 Array of integers is given. Find sum of its elements that are divisable by a given K.
     public static int countSpecificElements(int[]array) {
         int n = 15; // dimension of array
         int arraySum = 0;// Variable for saving Sum of elements, which is required by findSumDivisibleToK
         int k = 5; //variable which represents that some value(in this case 5) is divisible to integer k
         array = new int[n];
-        for (int i = 0; i < array.length; i++) { //for elements from 0 to 15
+        for (int i = 0; i < array.length; i++) { //for elements from 0 to 14
             array[i] = i; //  assign number to each element of array
         }
         for (int i = 0; i < n; i++) // check if array is divisible to k

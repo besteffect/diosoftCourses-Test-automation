@@ -2,12 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b404b1a-4a75-46be-887c-b97b12a1c647" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Level1Junit/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Level1Junit/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Level1Junit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorExam/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageFactory/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceIUaPageObject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hometask4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/out/production/Level1Junit/Level1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/out/production/Level1Junit/TestLevel1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1Junit/src/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level1Junit/src/Level1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1TestNG/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageFactory_Slava/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +131,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Level1Junit/src/Level1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204" />
+            <state relative-caret-position="221">
+              <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Level1Junit/src/TestLevel1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state relative-caret-position="425">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,15 +158,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/Level1Junit/src/Level1.java" />
       </list>
     </option>
   </component>
@@ -64,19 +191,101 @@
         <subPane>
           <expand>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="CalculatorExam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="FinanceIUaPageFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="FinanceIUaPageObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Hometask1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Hometask2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Hometask3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Hometask4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="HotelProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
               <item name="Level1Junit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
               <item name="Level1Junit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Level1TestNG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="Objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Diosoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Diosoft" type="462c0819:PsiDirectoryNode" />
+              <item name="PageFactory_Slava" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -118,17 +327,13 @@
     <frame x="68" y="20" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -136,29 +341,38 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Level1Junit/src/Level1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Level1Junit/src/TestLevel1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="425">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Level1Junit/src/Level1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
         </state>
       </provider>
     </entry>
