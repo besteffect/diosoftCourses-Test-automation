@@ -13,7 +13,7 @@ public class Level1 {
 //        createArrayOfEvenNumbers();
 //        changeAllElementsToZ();
 //        calculateTheNumberOfPositiveNegativeNulls();
- //       changeBiggestWithSmallest(int []array);
+        //       changeBiggestWithSmallest(int []array);
 //        printOnlyArrayIisLessOrEqualToI();
 //        printAllModuleEqualsM(new int[]{23, 12, 2, 1, 4, 1, 17, 11, 44}, 5, 2);
 //        changeElementsPlaces(new int[]{25, 12, 2, 1, 4, 1, 4, 11, 44});
@@ -26,7 +26,6 @@ public class Level1 {
 //        findFirstMaxElementOfArray();
 //       createNewArrayWhenEndsK(new int[]{2, -5, 45, 2, -1, 5, 16, 10, 125, 1015, 45, 5, 12505}, 5);
     }
-
 
 
     // 1 Two numbers are given. Find the minimal one
@@ -42,7 +41,7 @@ public class Level1 {
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
     // 2 Array of integers is given. Find sum of its elements that are divisable by a given K.
-    public static int countSpecificElements(int[]array) {
+    public static int countSpecificElements(int[] array) {
         int n = 15; // dimension of array
         int arraySum = 0;// Variable for saving Sum of elements, which is required by findSumDivisibleToK
         int k = 5; //variable which represents that some value(in this case 5) is divisible to integer k
@@ -60,7 +59,7 @@ public class Level1 {
     //3 В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
     //3 Array of integers has elements with 0 values. Create an array with numbers of these elements
     public static int[] countOfZeronumbersinarray(int[] array) {
-       // int[] array = {0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0};
+        // int[] array = {0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0};
         int j = 0;
         int b = 0;
         for (int i = 0; i < array.length; i++) { //calculate the number of zeros in array
@@ -74,10 +73,10 @@ public class Level1 {
                 j++; // incrementally increase
             }
         }
-        System.out.println("b is "+b);
+        System.out.println("b is " + b);
         for (int k = 0; k < array1.length; k++) { //printing out the array of k.
 
-            System.out.println("Task3 " +array1[k]);
+            System.out.println("Task3 " + array1[k]);
         }
         return array1;
     }
@@ -107,10 +106,10 @@ public class Level1 {
 
     //5 Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.
     // 5 Array of int is given. Find out if it is ascending
-    public static String isArraySorted(int[]array) {
-      //  int[] array = {7, 8, 12, 22, 33, 51, 63, 64, 55}; //creating array
+    public static String isArraySorted(int[] array) {
+        //  int[] array = {7, 8, 12, 22, 33, 51, 63, 64, 55}; //creating array
         boolean isSorted = false;
-        String result=null;
+        String result = null;
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 isSorted = false;
@@ -130,7 +129,7 @@ public class Level1 {
     // 6 Дан массив чисел. Создать массив из четных чисел этого массива. Если таких чисел нет, то вывести сообщение об этом факте.
     // 6 Array of int is given. Create an array with even numbers of this array. If there are no such numbers, print a message about it
     public static int[] createArrayOfEvenNumbers(int[] array) {
-       // int[] array = {1, 1, 2, 32, 1, 3, 51, 21};
+        // int[] array = {1, 1, 2, 32, 1, 3, 51, 21};
         int b = 0;
         int j = 0;
         //boolean noEvenNumbers = false;
@@ -169,8 +168,8 @@ public class Level1 {
     4) array[i] -элемент массива
     5) i - индекс элемента массива, array[4]=3- значит 4-й элемент массива равен 3
      */
-    public static int changeAllElementsToZ(int[]array) {
-       // int[] array = {1, 2, -5, 4, 6, 44, 3, -13, -4, 44};
+    public static int changeAllElementsToZ(int[] array) {
+        // int[] array = {1, 2, -5, 4, 6, 44, 3, -13, -4, 44};
         int z = 4;
         int count = 0; //variable for counting how many times we interchange values in array with z values
         for (int i = 0; i < array.length; i++) {
@@ -221,7 +220,7 @@ public class Level1 {
     // 9. Дан массив чисел. Поменять местами наибольший и наименьший элементы.
     // 9 Array of integers ig given. Reverse the biggest and the smallest elements
     public static int[] changeBiggestWithSmallest(int[] array) {
-       // int[] array = {1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76};
+        // int[] array = {1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76};
         int biggest = array[0];
         int smallest = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -250,20 +249,20 @@ public class Level1 {
     //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 1-й элемент массива равен 2
     // With given array of int, print only numbers which qualify the condition arr[i]<=i
     public static int[] printOnlyArrayIisLessOrEqualToI(int[] array) {
-       // int[] array = {25, 1, 2, 1, 2, 1, 4, 11, 44};
-        int count=0;
-        int count1=0;
+        // int[] array = {25, 1, 2, 1, 2, 1, 4, 11, 44};
+        int count = 0;
+        int count1 = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
-                System.out.println("10Task " +array[i]);
+                System.out.println("10Task " + array[i]);
                 count++;
             }
         }
-        int[]array1=new int[count];
+        int[] array1 = new int[count];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] <= i){
-               array1[count1]=array[i];
-                count1=count1+1;
+            if (array[i] <= i) {
+                array1[count1] = array[i];
+                count1 = count1 + 1;
             }
         }
         return array1;
@@ -292,6 +291,7 @@ public class Level1 {
     }
 
     //12. Дан массив чисел.  Поменять местами соседние элементы (аrray[0] и аrray[1], аrray[2] и аrray[3], …)
+    //12. Array of integers s given. Interchange the position of adjacent elements (аrray[0] and аrray[1], аrray[2] and аrray[3], …)
     public static int[] changeElementsPlaces(int[] array) {
         int b = 0; //variable for saving temporal values of new array
         for (int i = 0; i < array.length - 1; i++) { // for all array indexes from zero to the last-1
@@ -306,43 +306,45 @@ public class Level1 {
         return array;
     }
 
-    //13. Дан массив чисел, среди которых имеется один нуль. Вывести на печать все числа, включительно до нуля.
-    public static int[] printAllIncludingNull(int []array) {
-       // int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
+    //13. Дан массив чисел, среди которых имеется один ноль. Вывести на печать все числа, включительно до нуля.
+    //13 Array of integers has 0. Print all elements up to 0.
+    public static int[] printAllIncludingNull(int[] array) {
+        // int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
         int i = 0;
         int count = 0;
         int count1 = 0;
-        int i1=0;
-        while (array[i] != 0)//!=  is not equal to
-        {   //for such case DO WHILE is used. It looks at all elements of array, until while condition is finished.
-           // System.out.println("New array is " + array[i]); //Printing out the last number till 0 is found. Additionally, 0 is printed
+        int j = 0;
+        while (array[i] != 0)//
+        {   //for such case DO WHILE is used. It looks at all elements of array, until WHILE condition is finished.
+            // System.out.println("New array is " + array[i]); //Printing out the last number till 0 is found. Additionally, 0 is printed
             i++;
             count++;
         }
-       // System.out.println("New array is " + array[i]);//printing out zero number of array.
-        count=count+1;
+        // System.out.println("New array is " + array[i]);//printing out zero number of array.
+        count = count + 1;
         int[] array1 = new int[count];
         System.out.println("count " + count);
-        while (array[i1] != 0) {
-            array1[count1] = array[i1];
-            i1++;
-            count1 = count1+1;
+        while (array[j] != 0) {
+            array1[count1] = array[j];
+            j++;
+            count1 = count1 + 1;
         }
         for (int temp = 0; temp < array1.length; temp++) {
             System.out.println("13 array1 " + array1[temp]);
         }
-        return array1;//1. посчитать количество элементов до нуля(count) плюс сам ноль и записать эти значения в новый массив. Его вернуть
+        return array1;// посчитать количество элементов до нуля(count) плюс сам ноль и записать эти значения в новый массив. Его вернуть
 
     }
 
     //14. Дан массив чисел. Найти  mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).
+    //14. Array of integers is given. Find mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).
     public static int findMaxEvenPlusMinOdd(int[] array) {
         //int[] array = {4, -34, -21, 2, 1, 4, 0, 11, 41};
         int biggestEven = array[0];
         int smallestOdd = array[1];
         int sumOfBiggestEvenAndSmallestOdd;
         for (int i = 0; i < array.length; i++) {  // [находим наибольшее парное число (biggest<array[i]) biggest=array[i];
-            if ((i % 2 == 0) && (array[i] > biggestEven)) {
+            if (( i % 2 == 0 ) && ( array[i] > biggestEven )) {
                 biggestEven = array[i]; //Finding the biggest element in array (i-index)
             }
             if (i % 2 == 0 && array[i] < smallestOdd) {
@@ -357,10 +359,11 @@ public class Level1 {
     }
 
     //15 Дан массив целых положительных чисел. Найти произведение только тех чисел, которые больше заданного числа М. Если таких нет, то выдать сообщение об этом.
+    //15. Given an array of positive integers. Find a product onlyof numbers which are begger than a given M. If there are no such numbers show error message
     public static int findMultiplOfNumbersBuggerThenM(int[] array, int m) {
         //int[] array = {4, 10, 10, 2, 1, 4, 11, 21};// задаем массив
         // int m = 10; // m- переменная, с которой мы сравниваем числа в массиве
-        int multiplOfnumbers = 1; //переменная для хранения умноженных чисел, которые больше числа m.
+        int multiplOfnumbers = 1; //переменная для хранения умноженных чисел, которые больше числа M.
         int counter = 0;// переменная, для хранения количества чисел, которые больше числа m
         String result;
         for (int i = 0; i < array.length; i++) { //цикл со счетчиком (для всех чисел массива от 0-го по порядку до последнего)
@@ -379,18 +382,19 @@ public class Level1 {
     }
 
     //16 Дан массив положительных и отрицательных чисел. Заменить нулями те числа, величина которых по модулю больше максимального числа (|a[i]| > max{ a[0], a[1], ..., a[n]})
+    //16. Given an array of positive and negative numbers. Replace with 0 those numbers whose magnitude is greater than the maximum number (|a[i]| > max{ a[0], a[1], ..., a[n]})
     public static int[] findbiggestnumberbyModule(int[] array) {
         // int[] array = {4, -36, -40, 2, 1, 35, 11, 21}; // задаем массив
-        int biggest = array[0];
+        int biggest = array[0]; // biggest number
         for (int i = 0; i < array.length; i++) {
-            if (biggest < array[i]) {
+            if (biggest < array[i]) { //compare biggest number with every element in array
                 biggest = array[i];//нашел наибольшее число
             }
         }
         System.out.println("Biggest number is " + biggest);
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0) {
-                array[i] = array[i] * (-1);
+                array[i] = array[i] * ( -1 );
                 if (array[i] > biggest) {
                     array[i] = 0;
                 }
@@ -402,10 +406,14 @@ public class Level1 {
         return array; //
     }
 
-    //17 Дан массив чисел с положительными и отрицательными элементы. Вычислить произведение отрицательных элементов P1 и произведение положительных элементов Р2. Сравнить модуль Р2 с модулем Р1 и указать, какое из произведений по модулю больше.
+    /*17. Дан массив чисел с положительными и отрицательными элементами. Вычислить произведение отрицательных элементов
+    P1 и произведение положительных элементов Р2. Сравнить модуль Р2 с модулем Р1 и указать, какое из произведений по модулю больше.
+    17 An array of numbers with positive and negative elements is given. Calculate the product of negative elements P1
+    and the product of positive elements P2. Compare the module P2 with the module P1 and indicate which of the products modulo is bigger.
+     */
     public static String findMultiplOfMinAnMinusNumbers(int[] array) {
         // int[] array = {2, -5, -450, 2, -1, 5, 10, 10};
-        int multiplofMinusNumbers = 1;
+        int multiplofMinusNumbers = 1; // it is not 0 because multiplication by 0 is always 0
         int multiplofPlusNumbers = 1;
         String result = null;
         for (int i = 0; i < array.length; i++) {
@@ -417,7 +425,7 @@ public class Level1 {
             }
         }
         if (multiplofMinusNumbers < 0) {
-            multiplofMinusNumbers = multiplofMinusNumbers * (-1);
+            multiplofMinusNumbers = multiplofMinusNumbers * ( -1 );
         }
         System.out.println("Minus numbers multiplied " + multiplofMinusNumbers);
         System.out.println("Plus numbers multiplied " + multiplofPlusNumbers);
@@ -426,14 +434,16 @@ public class Level1 {
             result = "Multiplication of minus numbers is bigger";
         } else {
             System.out.println("Multiplication of plus numbers is bigger");
-            result = "Multiplication of plus numbers is bigger";}
-            return result;
+            result = "Multiplication of plus numbers is bigger";
+        }
+        return result;
 
     }
 
     // 18 Дан массив чисел. Среди них есть равные. Найти первый максимальный элемент массива и заменить его нулем.
-    public static int[] findFirstMaxElementOfArray(int [] array) {
-       // int[] array = {2, -5, 45, 2, -1, 5, 10, 10, 45, 5};
+    //18. An array of numbers is given. Among them are equal numbers. Find the first maximum element of the array and replace it with zero.
+    public static int[] findFirstMaxElementOfArray(int[] array) {
+        // int[] array = {2, -5, 45, 2, -1, 5, 10, 10, 45, 5};
         int maxElement = array[0];
         for (int i = 0; i < array.length; i++) {
             if (maxElement < array[i]) {
@@ -444,7 +454,7 @@ public class Level1 {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == maxElement) {
                 array[i] = 0;
-                break;
+                break; // breaking loop when the first biggest element was found and replaced with 0
             }
         }
         for (int i = 0; i < array.length; i++) {
@@ -453,27 +463,28 @@ public class Level1 {
         return array;
     }
 
-    //19 Дан массив чиcел. Образовать новый массив, элементами которого будут элементы исходного, оканчивающиеся на цифру k.
+    //19. Дан массив чиcел. Образовать новый массив, элементами которого будут элементы исходного, оканчивающиеся на цифру k.
+    //19. An array of numbers is given. Create a new array, the elements of which will be the elements of the original, with k in the end.
     public static int[] createNewArrayWhenEndsK(int[] array, int k) {
         // int[] array = {2, -5, 45, 2, -1, 5, 16, 10, 125, 1015, 45, 5, 12505};
         // int k=5; //  2%5=0.4. Значит что результат будет 4.
-        int[] array1;
+        int[] newArray;
         int count = 0;
-        int count1=0;
+        int count1 = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 10 == k) { // делю по модулю на 10 чтоб найти остаток от деления. Если остаток от деления равен 5, то это значит что число заканчивается на 5. В данном случае на 5 нельзя делить, так как 10/5 будет равно 5
                 System.out.println("19 New array is " + array[i]); //выводим результат
                 count++;
             }
         }
-        array1 = new int[count];
+        newArray = new int[count];
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 10 == k) {
-                array1[count1] = array[i];
+                newArray[count1] = array[i];
                 count1++;
             }
         }
-        return array1;
+        return newArray;
     }
 }
 
