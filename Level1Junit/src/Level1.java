@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by Smart on 2/7/2015.
  */
@@ -16,7 +18,8 @@ public class Level1 {
 //        changeAllElementsToZ();
 //        calculateTheNumberOfPositiveNegativeNulls();
         //       changeBiggestWithSmallest(int []array);
-//        printOnlyArrayIisLessOrEqualToI();
+        int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3,39,7};
+        System.out.println(Arrays.toString(printOnlyArrayIisLessOrEqualToI(arrayI)));
 //        printAllModuleEqualsM(new int[]{23, 12, 2, 1, 4, 1, 17, 11, 44}, 5, 2);
 //        changeElementsPlaces(new int[]{25, 12, 2, 1, 4, 1, 4, 11, 44});
 //        int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
@@ -218,7 +221,6 @@ public class Level1 {
         int positive = 0;
         int negative = 0;
         int zeros = 0;
-        String letter = null;
         String result;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 0) {
@@ -244,6 +246,7 @@ public class Level1 {
         // int[] array = {1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76};
         int biggest = array[0];
         int smallest = array[0];
+        //a Find the biggest and the smallest elements
         for (int i = 0; i < array.length; i++) {
             if (biggest < array[i]) {
                 biggest = array[i];
@@ -252,6 +255,8 @@ public class Level1 {
                 smallest = array[i];
             }
         }
+
+        //b Reverse the biggest element with the smallest
         for (int i = 0; i < array.length; i++) {
             if (array[i] == biggest) {
                 array[i] = smallest;
@@ -270,20 +275,22 @@ public class Level1 {
     //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 1-й элемент массива равен 2
     // With given array of int, print only numbers which qualify the condition arr[i]<=i
     public static int[] printOnlyArrayIisLessOrEqualToI(int[] array) {
-        // int[] array = {25, 1, 2, 1, 2, 1, 4, 11, 44};
+         int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3,39, 7}; //expected [0,1,1,3,4,3,7]
         int count = 0;
         int count1 = 0;
+        System.out.println("10 Task. Indexes: ");
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
-                System.out.println("10Task " + array[i]);
+                System.out.print(array[i]+ " ");
                 count++;
             }
         }
+        System.out.println();
         int[] array1 = new int[count];
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
                 array1[count1] = array[i];
-                count1 = count1 + 1;
+              //  count1 = count1 + 1;
             }
         }
         return array1;
