@@ -290,7 +290,7 @@ public class Level1 {
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
                 array1[count1] = array[i];
-              //  count1 = count1 + 1;
+                count1 = count1 + 1;
             }
         }
         return array1;
