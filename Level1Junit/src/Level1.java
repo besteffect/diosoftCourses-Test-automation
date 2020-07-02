@@ -8,7 +8,9 @@ public class Level1 {
 //        findMinimum(findmin1, findmin2);
 //        countSpecificElements();
 //        countOfZeronumbersinarray();
-//        findWhichIsFirstPositiveorNegative();
+        int[] array = {0, 0, -2, -4, 24, 53};
+        findWhichIsFirstPositiveorNegative(array);
+        findWhichIsFirstPositiveorNegative1(array);
 //        isArraySorted();
 //        createArrayOfEvenNumbers();
 //        changeAllElementsToZ();
@@ -99,6 +101,25 @@ public class Level1 {
         } else {
             System.out.println("First number is negative and equals to " + firstNumber); // printing number if it's less than zero
             result = "First number is negative";
+        }
+        return result;
+    }
+
+    public static String findWhichIsFirstPositiveorNegative1(int[] array) {
+       //  int[] array = {0, 0, -2, -4, 24, 53};
+        String result = null;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != 0) {
+                if (array[i] >0){
+                    System.out.println("First number is positive and equals to " + array[i]);
+                    result = "First number is positive";
+                    break;
+                } else {
+                    System.out.println("First number is negative and equals to " + array[i]);
+                    result = "First number is negative";
+                    break;
+                }
+            }
         }
         return result;
     }
