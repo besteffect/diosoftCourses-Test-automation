@@ -23,7 +23,8 @@ public class Level1 {
 //        printAllModuleEqualsM(new int[]{23, 12, 2, 1, 4, 1, 17, 11, 44}, 5, 2);
 //        changeElementsPlaces(new int[]{25, 12, 2, 1, 4, 1, 4, 11, 44});
 //        int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
-//        printAllIncludingNull(array); //array for task13
+
+        printAllIncludingNull(new int[] {1, 4, -33, 2, 1, 4, 0, 11, 44}); //array for task13
 //        findMaxEvenPlusMinOdd(new int[]{4, -34, -21, 2, 1, 4, 0, 11, 41});
 //        findMultiplOfNumbersBuggerThenM(new int[]{4, 10, 10, 2, 1, 4, 11, 21}, 10);
 //        findbiggestnumberbyModule(new int[]{4, -36, -40, 2, 1, 35, 11, 21});
@@ -278,6 +279,7 @@ public class Level1 {
          int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3,39, 7}; //expected [0,1,1,3,4,3,7]
         int count = 0;
         int count1 = 0;
+        //count number of elements in a new array
         System.out.println("10 Task. Indexes: ");
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
@@ -286,6 +288,7 @@ public class Level1 {
             }
         }
         System.out.println();
+        //new array with 'count' number of elements
         int[] array1 = new int[count];
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
@@ -312,7 +315,7 @@ public class Level1 {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % m == l) {
                 array1[count1] = array[i];
-                count1 = count1 + 1;
+                count1++;
             }
         }
         return array1;
@@ -349,16 +352,16 @@ public class Level1 {
             count++;
         }
         // System.out.println("New array is " + array[i]);//printing out zero number of array.
-        count = count + 1;
+        count = count + 1; //Here we add 0 value to array
         int[] array1 = new int[count];
-        System.out.println("count " + count);
+        System.out.println("Task 13. Count " + count);
         while (array[j] != 0) {
             array1[count1] = array[j];
             j++;
-            count1 = count1 + 1;
+            count1++;
         }
         for (int temp = 0; temp < array1.length; temp++) {
-            System.out.println("13 array1 " + array1[temp]);
+            System.out.print(" " + array1[temp]);
         }
         return array1;// посчитать количество элементов до нуля(count) плюс сам ноль и записать эти значения в новый массив. Его вернуть
 
@@ -475,7 +478,7 @@ public class Level1 {
         int maxElement = array[0];
         for (int i = 0; i < array.length; i++) {
             if (maxElement < array[i]) {
-                maxElement = array[i];// нашли наибольшее число
+                maxElement = array[i];// нашли наибольшее чиq!
             }
         }
         System.out.println("Max. Element is " + maxElement);
