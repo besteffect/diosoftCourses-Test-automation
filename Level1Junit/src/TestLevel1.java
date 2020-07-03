@@ -96,6 +96,6 @@ public class TestLevel1 {
         int m = 5;
         int l = 2;
         int[] expectedArray = {12, 2, 17};
-        Assert.assertArrayEquals(expectedArray, Level1.printAllModuleEqualsM(array,5,2));
+        Assert.assertArrayEquals(expectedArray, Level1.printAllModuleEqualsM(array,m,l));
     }
 }
