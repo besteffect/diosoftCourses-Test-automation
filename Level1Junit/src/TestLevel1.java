@@ -127,4 +127,11 @@ public class TestLevel1 {
          int expectedResult= 231; //11*21
         Assert.assertEquals(expectedResult,Level1.findMultiplOfNumbersBuggerThenM(array,m));
     }
+
+    @Test //16
+    public void testFindBiggestNumberByModule(){
+        int[] array = {4, -36, -40, 2, 1, 35, 11, 21};
+        int[] expectedArray = {4, 0, 0, 2, 1, 35, 11, 21};
+        Assert.assertArrayEquals(expectedArray,Level1.findbiggestnumberbyModule(array));
+    }
 }
