@@ -119,4 +119,12 @@ public class TestLevel1 {
         int expectedResult=7; //41-34
         Assert.assertEquals(expectedResult, Level1.findMaxEvenPlusMinOdd(array));
     }
+
+    @Test //Task15
+    public void testFindMultiplOfNumbersBuggerThenM(){
+        int[] array = {4, 10, 10, 2, 1, 4, 11, 21};
+         int m = 10;
+         int expectedResult= 231; //11*21
+        Assert.assertEquals(expectedResult,Level1.findMultiplOfNumbersBuggerThenM(array,m));
+    }
 }
