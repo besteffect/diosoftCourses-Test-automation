@@ -1,5 +1,7 @@
 import java.util.Arrays;
 
+import static java.lang.Math.abs;
+
 /**
  * Created by Smart on 2/7/2015.
  */
@@ -519,6 +521,28 @@ public class Level1 {
                 d = -d;
             }
             if (d == k) {
+                newArray[count1] = array[i];
+                count1++;
+            }
+        }
+        return newArray;
+    }
+//19 With Math.abs function
+    public static int[] createNewArrayWhenEndsK1(int[] array, int k) {
+        int[] newArray;
+        int count = 0;
+        int count1 = 0;
+        for (int i = 0; i < array.length; i++) {
+            int c = array[i];
+            if (abs(c)%10==k){
+                System.out.println("19 New array is " + array[i]);
+                count++;
+            }
+        }
+        newArray = new int[count];
+        for (int i = 0; i < array.length; i++) {
+            int d = array[i];
+            if (abs(d)%10==k) {
                 newArray[count1] = array[i];
                 count1++;
             }
