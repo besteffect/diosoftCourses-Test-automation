@@ -16,14 +16,14 @@ public class TestLevel1 {
     public void testCountSpecificElements() {
         int[] array = {1, 34, 3, 42, 4, 4, 4, 2, 9, 10, 11, 12, 13, 14, 15};
         int expectedNumber = 15;
-        Assert.assertEquals(expectedNumber,Level1.countSpecificElements(array));
+        Assert.assertEquals(expectedNumber, Level1.countSpecificElements(array));
     }
 
     @Test  //Task3  Я пока не разобрался почему фейлится
     public void testCountOfZeronumbersinarray() {
         int[] array = {0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0};
         int[] expectedArray = {0, 6, 7, 9, 13};
-        boolean b = Arrays.equals(expectedArray,Level1.countOfZeronumbersinarray(array));
+        boolean b = Arrays.equals(expectedArray, Level1.countOfZeronumbersinarray(array));
         Assert.assertTrue("Task3 result ", b);
     }
 
@@ -31,14 +31,14 @@ public class TestLevel1 {
     public void testFindWhichIsFirstPositiveorNegative() {
         int[] array = {0, 0, 2, -4, 24, 53};
         String expectedResult = "First number is positive";
-        Assert.assertEquals(expectedResult,Level1.findWhichIsFirstPositiveorNegative(array));
+        Assert.assertEquals(expectedResult, Level1.findWhichIsFirstPositiveorNegative(array));
     }
 
     @Test// Task4 If first number is negative
     public void test1FindWhichIsFirstPositiveorNegative() {
         int[] array = {0, 0, -2, -4, 24, 53};
         String expectedResult = "First number is negative";
-        Assert.assertEquals(expectedResult,Level1.findWhichIsFirstPositiveorNegative(array));
+        Assert.assertEquals(expectedResult, Level1.findWhichIsFirstPositiveorNegative(array));
     }
 
     @Test //Task5 If array is not sorted
@@ -96,6 +96,27 @@ public class TestLevel1 {
         int m = 5;
         int l = 2;
         int[] expectedArray = {12, 2, 17};
-        Assert.assertArrayEquals(expectedArray, Level1.printAllModuleEqualsM(array,m,l));
+        Assert.assertArrayEquals(expectedArray, Level1.printAllModuleEqualsM(array, m, l));
+    }
+
+    @Test //Task12
+    public void testChangeElementsPlaces(){
+        int[] array ={25, 12, 2, 1, 4, 1, 4, 11, 44};
+        int [] expectedArray= {12,25,1,2,1,4,11,4, 44};
+        Assert.assertArrayEquals(expectedArray,Level1.changeElementsPlaces(array));
+    }
+
+    @Test //Task13
+    public void testPrintAllIncludingNull(){
+        int [] array ={1, 4, -33, 2, 1, 4, 0, 11, 44};
+        int [] expectedArray = {1, 4, -33, 2, 1, 4, 0};
+        Assert.assertArrayEquals(expectedArray,Level1.printAllIncludingNull(array));
+    }
+
+    @Test //Task14
+    public void testfindMaxEvenPlusMinOdd(){
+        int[] array = {4, -34, -21, 2, 1, 4, 0, 11, 41};
+        int expectedResult=7; //41-34
+        Assert.assertEquals(expectedResult, Level1.findMaxEvenPlusMinOdd(array));
     }
 }
