@@ -141,4 +141,11 @@ public void testFindMultiplOfMinAnMinusNumbers(){
         String expectedResult = "Multiplication of negative numbers is bigger";
         Assert.assertEquals(expectedResult,Level1.findMultiplOfMinAnMinusNumbers(array));
     }
+
+    @Test
+    public void testFindFirstMaxElementOfArray(){
+        int[] array = {2, -5, 45, 2, -1, 5, 10, 10, 45, 5};
+        int [] expectedArray ={2, -5, 0, 2, -1, 5, 10, 10, 45, 5};
+        Assert.assertArrayEquals(expectedArray,Level1.findFirstMaxElementOfArray(array));
+    }
 }

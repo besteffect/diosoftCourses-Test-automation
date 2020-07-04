@@ -478,7 +478,7 @@ public class Level1 {
         int maxElement = array[0];
         for (int i = 0; i < array.length; i++) {
             if (maxElement < array[i]) {
-                maxElement = array[i];// нашли наибольшее чиq!
+                maxElement = array[i];// нашли наибольшее число
             }
         }
         System.out.println("Max. Element is " + maxElement);
