@@ -148,4 +148,12 @@ public void testFindMultiplOfMinAnMinusNumbers(){
         int [] expectedArray ={2, -5, 0, 2, -1, 5, 10, 10, 45, 5};
         Assert.assertArrayEquals(expectedArray,Level1.findFirstMaxElementOfArray(array));
     }
+
+    @Test
+    public void testCreateNewArrayWhenEndsK() {
+        int[] array = {2, -5, 45, 2, -1, 5, 16, 10, 125, 1015, 45, 5, 12505};
+        int k = 5;
+        int [] expectedArray = {-5,45,5,125,1015,45,5,12505};
+        Assert.assertArrayEquals(expectedArray,Level1.createNewArrayWhenEndsK(array,5));
+    }
 }

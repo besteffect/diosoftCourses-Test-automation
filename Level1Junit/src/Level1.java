@@ -18,13 +18,13 @@ public class Level1 {
 //        changeAllElementsToZ();
 //        calculateTheNumberOfPositiveNegativeNulls();
         //       changeBiggestWithSmallest(int []array);
-        int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3,39,7};
+        int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7};
         System.out.println(Arrays.toString(printOnlyArrayIisLessOrEqualToI(arrayI)));
 //        printAllModuleEqualsM(new int[]{23, 12, 2, 1, 4, 1, 17, 11, 44}, 5, 2);
 //        changeElementsPlaces(new int[]{25, 12, 2, 1, 4, 1, 4, 11, 44});
 //        int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
 
-        printAllIncludingNull(new int[] {1, 4, -33, 2, 1, 4, 0, 11, 44}); //array for task13
+        printAllIncludingNull(new int[]{1, 4, -33, 2, 1, 4, 0, 11, 44}); //array for task13
 //        findMaxEvenPlusMinOdd(new int[]{4, -34, -21, 2, 1, 4, 0, 11, 41});
 //        findMultiplOfNumbersBuggerThenM(new int[]{4, 10, 10, 2, 1, 4, 11, 21}, 10);
 //        findbiggestnumberbyModule(new int[]{4, -36, -40, 2, 1, 35, 11, 21});
@@ -110,11 +110,11 @@ public class Level1 {
     }
 
     public static String findWhichIsFirstPositiveorNegative1(int[] array) {
-       //  int[] array = {0, 0, -2, -4, 24, 53};
+        //  int[] array = {0, 0, -2, -4, 24, 53};
         String result = null;
         for (int i = 0; i < array.length; i++) {
             if (array[i] != 0) {
-                if (array[i] >0){
+                if (array[i] > 0) {
                     System.out.println("First number is positive and equals to " + array[i]);
                     result = "First number is positive";
                     break;
@@ -276,14 +276,14 @@ public class Level1 {
     //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 1-й элемент массива равен 2
     // With given array of int, print only numbers which qualify the condition arr[i]<=i
     public static int[] printOnlyArrayIisLessOrEqualToI(int[] array) {
-         int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3,39, 7}; //expected [0,1,1,3,4,3,7]
+        int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7}; //expected [0,1,1,3,4,3,7]
         int count = 0;
         int count1 = 0;
         //count number of elements in a new array
         System.out.println("10 Task. Indexes: ");
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= i) {
-                System.out.print(array[i]+ " ");
+                System.out.print(array[i] + " ");
                 count++;
             }
         }
@@ -375,7 +375,7 @@ public class Level1 {
         int smallestOdd = array[1];
         int sumOfBiggestEvenAndSmallestOdd;
         for (int i = 0; i < array.length; i++) {  // [находим наибольшее парное число (biggest<array[i]) biggest=array[i];
-            if (( i % 2 == 0 ) && ( array[i] > biggestEven )) {
+            if ((i % 2 == 0) && (array[i] > biggestEven)) {
                 biggestEven = array[i]; //Finding the biggest element in array (i-index)
             }
             if (i % 2 == 0 && array[i] < smallestOdd) {
@@ -425,7 +425,7 @@ public class Level1 {
         System.out.println("Biggest number is " + biggest);
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 0) {
-                array[i] = array[i] * ( -1 );
+                array[i] = array[i] * (-1);
                 if (array[i] > biggest) {
                     array[i] = 0;
                 }
@@ -456,7 +456,7 @@ public class Level1 {
             }
         }
         if (multiplofMinusNumbers < 0) {
-            multiplofMinusNumbers = multiplofMinusNumbers * ( -1 );
+            multiplofMinusNumbers = multiplofMinusNumbers * (-1);
         }
         System.out.println("Minus numbers multiplied " + multiplofMinusNumbers);
         System.out.println("Plus numbers multiplied " + multiplofPlusNumbers);
@@ -503,14 +503,22 @@ public class Level1 {
         int count = 0;
         int count1 = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 10 == k) { // делю по модулю на 10 чтоб найти остаток от деления. Если остаток от деления равен 5, то это значит что число заканчивается на 5. В данном случае на 5 нельзя делить, так как 10/5 будет равно 5
+            int c = array[i] % 10;
+            if (c < 0) {
+                c = -c;
+            }
+            if (c == k) { // делю по модулю на 10 чтоб найти остаток от деления. Если остаток от деления равен 5, то это значит что число заканчивается на 5. В данном случае на 5 нельзя делить, так как 10/5 будет равно 5
                 System.out.println("19 New array is " + array[i]); //выводим результат
                 count++;
             }
         }
         newArray = new int[count];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 10 == k) {
+            int d = array[i] % 10;
+            if (d < 0) {
+                d = -d;
+            }
+            if (d == k) {
                 newArray[count1] = array[i];
                 count1++;
             }
