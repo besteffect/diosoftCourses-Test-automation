@@ -462,10 +462,10 @@ public class Level1 {
         System.out.println("Plus numbers multiplied " + multiplofPlusNumbers);
         if (multiplofMinusNumbers > multiplofPlusNumbers) {
             System.out.println("Multiplication of minus numbers is bigger");
-            result = "Multiplication of minus numbers is bigger";
+            result = "Multiplication of negative numbers is bigger";
         } else {
             System.out.println("Multiplication of plus numbers is bigger");
-            result = "Multiplication of plus numbers is bigger";
+            result = "Multiplication of positive numbers is bigger";
         }
         return result;
 

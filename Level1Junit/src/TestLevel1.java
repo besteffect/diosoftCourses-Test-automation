@@ -100,38 +100,45 @@ public class TestLevel1 {
     }
 
     @Test //Task12
-    public void testChangeElementsPlaces(){
-        int[] array ={25, 12, 2, 1, 4, 1, 4, 11, 44};
-        int [] expectedArray= {12,25,1,2,1,4,11,4, 44};
-        Assert.assertArrayEquals(expectedArray,Level1.changeElementsPlaces(array));
+    public void testChangeElementsPlaces() {
+        int[] array = {25, 12, 2, 1, 4, 1, 4, 11, 44};
+        int[] expectedArray = {12, 25, 1, 2, 1, 4, 11, 4, 44};
+        Assert.assertArrayEquals(expectedArray, Level1.changeElementsPlaces(array));
     }
 
     @Test //Task13
-    public void testPrintAllIncludingNull(){
-        int [] array ={1, 4, -33, 2, 1, 4, 0, 11, 44};
-        int [] expectedArray = {1, 4, -33, 2, 1, 4, 0};
-        Assert.assertArrayEquals(expectedArray,Level1.printAllIncludingNull(array));
+    public void testPrintAllIncludingNull() {
+        int[] array = {1, 4, -33, 2, 1, 4, 0, 11, 44};
+        int[] expectedArray = {1, 4, -33, 2, 1, 4, 0};
+        Assert.assertArrayEquals(expectedArray, Level1.printAllIncludingNull(array));
     }
 
     @Test //Task14
-    public void testfindMaxEvenPlusMinOdd(){
+    public void testfindMaxEvenPlusMinOdd() {
         int[] array = {4, -34, -21, 2, 1, 4, 0, 11, 41};
-        int expectedResult=7; //41-34
+        int expectedResult = 7; //41-34
         Assert.assertEquals(expectedResult, Level1.findMaxEvenPlusMinOdd(array));
     }
 
     @Test //Task15
-    public void testFindMultiplOfNumbersBuggerThenM(){
+    public void testFindMultiplOfNumbersBuggerThenM() {
         int[] array = {4, 10, 10, 2, 1, 4, 11, 21};
-         int m = 10;
-         int expectedResult= 231; //11*21
-        Assert.assertEquals(expectedResult,Level1.findMultiplOfNumbersBuggerThenM(array,m));
+        int m = 10;
+        int expectedResult = 231; //11*21
+        Assert.assertEquals(expectedResult, Level1.findMultiplOfNumbersBuggerThenM(array, m));
     }
 
     @Test //16
-    public void testFindBiggestNumberByModule(){
+    public void testFindBiggestNumberByModule() {
         int[] array = {4, -36, -40, 2, 1, 35, 11, 21};
         int[] expectedArray = {4, 0, 0, 2, 1, 35, 11, 21};
-        Assert.assertArrayEquals(expectedArray,Level1.findbiggestnumberbyModule(array));
+        Assert.assertArrayEquals(expectedArray, Level1.findbiggestnumberbyModule(array));
+    }
+
+    @Test //17
+public void testFindMultiplOfMinAnMinusNumbers(){
+        int[] array = {2, -1, -401, 2, -1, 1, 10, 10}; //positive 400
+        String expectedResult = "Multiplication of negative numbers is bigger";
+        Assert.assertEquals(expectedResult,Level1.findMultiplOfMinAnMinusNumbers(array));
     }
 }
