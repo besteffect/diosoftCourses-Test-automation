@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Level1Collections {
 
@@ -16,5 +17,25 @@ public class Level1Collections {
             }
         }
         return arraySum;
+    }
+
+    //3 В целочисленном массиве есть нулевые элементы. Создать массив из номеров этих элементов.
+    //3 Array of integers has elements with 0 values. Create an array with numbers of these elements
+    public static List<Integer> countOfZeronumbersInArray(ArrayList<Integer> list) {
+        int numberOfZeros = 0;
+        int newListIndex = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == 0) {
+                numberOfZeros++;
+            }
+        }
+        List<Integer> newList = new ArrayList<>(numberOfZeros); //creating ArrayList with numberOfZeros size
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == 0) {
+                newList.set(newListIndex, i);
+                newListIndex++;
+            }
+        }
+        return newList;
     }
 }

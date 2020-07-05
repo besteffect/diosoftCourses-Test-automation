@@ -11,7 +11,7 @@ public class Level1 {
 //        int findmin2 = 99;
 //        findMinimum(findmin1, findmin2);
 //        countSpecificElements();
-//        countOfZeronumbersinarray();
+//        countOfZeronumbersInArray();
         int[] array = {0, 0, -2, -4, 24, 53};
         findWhichIsFirstPositiveorNegative(array);
         findWhichIsFirstPositiveorNegative1(array);
