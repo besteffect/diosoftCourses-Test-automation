@@ -32,7 +32,7 @@ public class Level1Collections {
         List<Integer> newList = new ArrayList<>(numberOfZeros); //creating ArrayList with numberOfZeros size
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == 0) {
-                newList.set(newListIndex, i);
+                newList.add(newListIndex, i);
                 newListIndex++;
             }
         }
