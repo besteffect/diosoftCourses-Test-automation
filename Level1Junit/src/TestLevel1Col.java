@@ -31,7 +31,7 @@ public class TestLevel1Col {
         int k=5;
         Assert.assertEquals(expectedNumber,Level1Collections.countSpecificElements(list,k));
     }
-
+@Test //Task3
     public void testcountOfZeronumbersinarray(){
         ArrayList<Integer> input = new ArrayList<>(List.of(0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0));
         List <Integer> expectedList = new ArrayList<>(List.of(0, 6, 7, 9, 13));
