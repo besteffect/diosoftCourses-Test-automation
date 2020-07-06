@@ -58,4 +58,42 @@ public class Level1Collections {
         }
         return result;
     }
+
+    //5 Дан массив чисел. Выяснить, отсортирован ли он по возрастанию.
+    //  int[] array = {7, 8, 12, 22, 33, 51, 63, 64, 55};
+    // 5 Array of int is given. Find out if it is ascending
+    public static boolean isArraySorted(List<Integer> list) {
+        boolean isSorted = false;
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i) < list.get(i + 1)) {
+                isSorted = true;
+            } else isSorted = false;
+        }
+        return isSorted;
+    }
+
+    // 6 Дан массив чисел. Создать массив из четных чисел этого массива. Если таких чисел нет, то вывести сообщение об этом факте.
+    // 6 Array of int is given. Create an array with even numbers of this array. If there are no such numbers, print a message about it
+    public static List<Integer> createArrayOfEvenNumbers(List<Integer> list) {
+        int elementsNumber = 0;
+        int arrayCounter = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) {
+                elementsNumber++;
+            }
+        }
+        ArrayList<Integer> finalList = new ArrayList<>(elementsNumber);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) {
+                finalList.add(list.get(i));
+            }
+        }
+        if (elementsNumber == 0) {
+            System.out.println("Here are no even number");
+        }
+        System.out.println("Task6 " + finalList);
+        return finalList;
+    }
+
 }
+
