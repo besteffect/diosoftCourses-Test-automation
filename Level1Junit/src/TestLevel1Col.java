@@ -2,6 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class TestLevel1Col {
@@ -36,5 +37,12 @@ public class TestLevel1Col {
         ArrayList<Integer> input = new ArrayList<>(List.of(0, 33, 2, 5, 63, 3, 0, 0, 3, 0, 3, 3, 1, 0));
         List <Integer> expectedList = new ArrayList<>(List.of(0, 6, 7, 9, 13));
         Assert.assertEquals(expectedList,Level1Collections.countOfZeronumbersInArray(input));
+    }
+
+    @Test //Task4
+    public void testFindWhichIsFirstPositiveOrNegative(){
+        List<Integer> list = new ArrayList<>(Arrays.asList(0, 0, -2, 1, -4, 24, 53));
+        String expectedText= "First number is negative";
+        Assert.assertEquals(expectedText,Level1Collections.findWhichIsFirstPositiveorNegative(list));
     }
 }

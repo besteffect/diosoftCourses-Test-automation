@@ -38,4 +38,24 @@ public class Level1Collections {
         }
         return newList;
     }
+
+    //4 Дан целочисленный массив чисел (положительных и отрицательных). Выяснить, какое число встречается раньше – положительное или отрицательное.
+    //4 Array of integers is given (positive and negative numbers). Define which number appears first - positive or negative.
+    public static String findWhichIsFirstPositiveorNegative(List<Integer> list) {
+        int firstNumber = 0;
+        String result = null;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) != 0) {
+                firstNumber = list.get(i);
+                break;
+            }
+        }
+        if (firstNumber > 0) {
+            result = "First number is positive";
+        }
+        if (firstNumber < 0) {
+            result = "First number is negative";
+        }
+        return result;
+    }
 }
