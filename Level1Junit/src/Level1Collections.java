@@ -110,6 +110,29 @@ public class Level1Collections {
     }
 
 
+    //8. Дан массив чисел. Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.
+    //8. Array of int is given. Calculate the number of negative, positive and 0 elements.
+
+    public static String calculateTheNumberOfPositiveNegativeNulls(List<Integer> list) {
+
+        int positiveNumbers=0;
+        int negativeNumbers=0;
+        int zeros=0;
+        for (int i=0; i<list.size();i++){
+            if (list.get(i)>0){
+                positiveNumbers++;
+            }
+            if (list.get(i)<0){
+                negativeNumbers++;
+            }
+            if (list.get(i)==0){
+                zeros++;
+            }
+        }
+        return "Positive: " +positiveNumbers + " Negative: " + negativeNumbers + " Zeros: " +zeros;
+    }
+
+
 
 
 }

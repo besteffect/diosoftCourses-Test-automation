@@ -67,11 +67,21 @@ public class TestLevel1Col {
     }
 
     @Test //Task7
-    public void testChangeAllElementsToZ(){
+    public void testChangeAllElementsToZ() {
         List<Integer> list = new ArrayList<>(List.of(1, 2, -5, 4, 6, 44, 3, -13, -4, 44));
-        int z =4;
-        int expectedNumber=3;
-        Assert.assertEquals("Test 7 ",expectedNumber, Level1Collections.changeAllElementsToZ(list,z));
+        int z = 4;
+        int expectedNumber = 3;
+        Assert.assertEquals("Test 7 ", expectedNumber, Level1Collections.changeAllElementsToZ(list, z));
+    }
 
+    @Test //Task8
+    public void testCalculateTheNumberOfPositiveNegativeNulls() {
+        List<Integer> list = new ArrayList<>(List.of(5, 0, -8, -43, 8, 12, 32, 65, 0, 4, 0, 0));
+        int positiveNumbers = 6;
+        int negativeNumbers = 2;
+        int zeros = 4;
+        String expectedResult = "Positive: " + positiveNumbers + " Negative: " + negativeNumbers + " Zeros: " + zeros;
+
+        Assert.assertEquals(expectedResult, Level1Collections.calculateTheNumberOfPositiveNegativeNulls(list));
     }
 }
