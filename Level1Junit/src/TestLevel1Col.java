@@ -65,4 +65,13 @@ public class TestLevel1Col {
         List<Integer> expectedList = new ArrayList<>(List.of(2, 32));
         Assert.assertEquals(expectedList, Level1Collections.createArrayOfEvenNumbers(list));
     }
+
+    @Test //Task7
+    public void testChangeAllElementsToZ(){
+        List<Integer> list = new ArrayList<>(List.of(1, 2, -5, 4, 6, 44, 3, -13, -4, 44));
+        int z =4;
+        int expectedNumber=3;
+        Assert.assertEquals("Test 7 ",expectedNumber, Level1Collections.changeAllElementsToZ(list,z));
+
+    }
 }

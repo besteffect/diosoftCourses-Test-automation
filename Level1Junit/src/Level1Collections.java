@@ -5,7 +5,7 @@ import java.util.List;
 public class Level1Collections {
 
     public static void main(String[] args) {
-        changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)),4);
+        changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)), 4);
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -98,16 +98,18 @@ public class Level1Collections {
 
     //7. Дан массив чисел. Заменить все его элементы, большие данного числа Z, этим числом. Подсчитать количество замен.
     public static int changeAllElementsToZ(List<Integer> list, int z) {
-        int counter=0;
-        for (int i =0; i<list.size(); i++){
-            if (list.get(i)>z){
-                list.set(i,z);
+        int counter = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > z) {
+                list.set(i, z);
                 counter++;
             }
         }
         System.out.println("7: Z=4. " + "LIST: " + list + " Number of Z: " + counter);
-return counter;
+        return counter;
     }
+
+
 
 
 }
