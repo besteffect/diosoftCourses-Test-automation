@@ -252,10 +252,10 @@ public class Level1 {
         //a Find the biggest and the smallest elements
         for (int i = 0; i < array.length; i++) {
             if (biggest < array[i]) {
-                biggest=array[i];
+                biggest = array[i];
             }
             if (smallest > array[i]) {
-                 smallest=array[i];
+                smallest = array[i];
             }
         }
 
@@ -265,8 +265,8 @@ public class Level1 {
                 array[i] = smallest;
             } else if (array[i] == smallest) {  // part of the program started working only after adding else statement. Before it, only the first part worked
                 // executed only if first condition was false and "else if" is true
-                    array[i] = biggest;
-                }
+                array[i] = biggest;
+            }
         }
         System.out.println("biggest number " + biggest);
         System.out.println("smallest number " + smallest);
@@ -275,7 +275,7 @@ public class Level1 {
         return array;
     }
 
-    //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 1-й элемент массива равен 2
+    //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i. (array[1]=2 - значит 2-й элемент массива равен 2
     // With given array of int, print only numbers which qualify the condition arr[i]<=i
     public static int[] printOnlyArrayIisLessOrEqualToI(int[] array) {
         int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7}; //expected [0,1,1,3,4,3,7]
@@ -527,14 +527,15 @@ public class Level1 {
         }
         return newArray;
     }
-//19 With Math.abs function
+
+    //19 With Math.abs function
     public static int[] createNewArrayWhenEndsK1(int[] array, int k) {
         int[] newArray;
         int count = 0;
         int count1 = 0;
         for (int i = 0; i < array.length; i++) {
             int c = array[i];
-            if (abs(c)%10==k){
+            if (abs(c) % 10 == k) {
                 System.out.println("19 New array is " + array[i]);
                 count++;
             }
@@ -542,7 +543,7 @@ public class Level1 {
         newArray = new int[count];
         for (int i = 0; i < array.length; i++) {
             int d = array[i];
-            if (abs(d)%10==k) {
+            if (abs(d) % 10 == k) {
                 newArray[count1] = array[i];
                 count1++;
             }

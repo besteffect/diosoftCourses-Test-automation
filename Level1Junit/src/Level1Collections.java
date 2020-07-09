@@ -5,9 +5,10 @@ import java.util.List;
 public class Level1Collections {
 
     public static void main(String[] args) {
-        changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)), 4);
-        System.out.println("Before changed: 1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76");
-        changeBiggestWithSmallest(new ArrayList<>(List.of(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76)));
+        //  changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)), 4);
+        //  System.out.println("Before changed: 1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76");
+        //  changeBiggestWithSmallest(new ArrayList<>(List.of(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76)));
+        printOnlyArrayIisLessOrEqualToI(new ArrayList<>(Arrays.asList(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7)));
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -141,11 +142,11 @@ public class Level1Collections {
         int smallest = list.get(0);
         //find the biggest and the smallest
         for (int i = 0; i < list.size(); i++) {
-            if (biggest<list.get(i)) {
-                biggest =list.get(i);
+            if (biggest < list.get(i)) {
+                biggest = list.get(i);
             }
-            if (smallest>list.get(i)) {
-                smallest=list.get(i);
+            if (smallest > list.get(i)) {
+                smallest = list.get(i);
             }
         }
         System.out.println("biggest number " + biggest);
@@ -153,16 +154,38 @@ public class Level1Collections {
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == smallest) {
-                list.set(i,biggest);
-            }else if (list.get(i) == biggest) {
-                list.set(i,smallest);
+                list.set(i, biggest);
+            } else if (list.get(i) == biggest) {
+                list.set(i, smallest);
             }
         }
-
         System.out.println(list);
         return list;
-
     }
+
+    //10. Дан массив. Вывести на печать только те числа, для которых выполняется условие arr[i]<=i.
+    // With given array of int, print only numbers which qualify the condition arr[i]<=i
+    //   int[] arrayI = {0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7}; //expected [0,1,1,3,4,3,7]
+    public static List<Integer> printOnlyArrayIisLessOrEqualToI(List<Integer> list) {
+        int count = 0; //count of integers in a new array
+        int index = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) <= i) {
+                count++;
+            }
+        }
+        System.out.println("Count: " + count);
+        List<Integer> finalList = new ArrayList<>(count);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) <= i) {
+                finalList.add(index, list.get(i));
+                index++;
+            }
+        }
+        System.out.println(finalList);
+        return finalList;
+    }
+
 }
 
 
