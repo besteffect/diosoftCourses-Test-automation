@@ -84,4 +84,12 @@ public class TestLevel1Col {
 
         Assert.assertEquals(expectedResult, Level1Collections.calculateTheNumberOfPositiveNegativeNulls(list));
     }
+
+    @Test //Task9
+    public void testChangeBiggestWithSmallest(){
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76));
+        List<Integer> expectedList = new ArrayList<>(List.of(76, 4, 76, 3, 1, 34, 3, 2, 53, 2, 43, 3, 43, 1));
+        Assert.assertEquals(expectedList,Level1Collections.changeBiggestWithSmallest(list));
+    }
+
 }

@@ -136,7 +136,7 @@ public class Level1Collections {
 
     // 9. Дан массив чисел. Поменять местами наибольший и наименьший элементы.
     // 9 Array of integers ig given. Reverse the biggest and the smallest elements
-    public static List<Integer> changeBiggestWithSmallest(ArrayList<Integer> list) {
+    public static List<Integer> changeBiggestWithSmallest(List<Integer> list) {
         int biggest = list.get(0);
         int smallest = list.get(0);
         //find the biggest and the smallest
