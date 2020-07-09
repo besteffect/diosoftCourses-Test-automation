@@ -252,10 +252,10 @@ public class Level1 {
         //a Find the biggest and the smallest elements
         for (int i = 0; i < array.length; i++) {
             if (biggest < array[i]) {
-                biggest = array[i];
+                biggest=array[i];
             }
             if (smallest > array[i]) {
-                smallest = array[i];
+                 smallest=array[i];
             }
         }
 
@@ -263,8 +263,8 @@ public class Level1 {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == biggest) {
                 array[i] = smallest;
-            } else // part of the program started working only after adding else statement. Before it, only the first part worked.
-                if (array[i] == smallest) {
+            } else if (array[i] == smallest) {  // part of the program started working only after adding else statement. Before it, only the first part worked
+                // executed only if first condition was false and "else if" is true
                     array[i] = biggest;
                 }
         }

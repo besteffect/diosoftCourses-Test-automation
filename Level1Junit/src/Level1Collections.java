@@ -6,6 +6,8 @@ public class Level1Collections {
 
     public static void main(String[] args) {
         changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)), 4);
+        System.out.println("Before changed: 1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76");
+        changeBiggestWithSmallest(new ArrayList<>(List.of(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76)));
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -115,25 +117,52 @@ public class Level1Collections {
 
     public static String calculateTheNumberOfPositiveNegativeNulls(List<Integer> list) {
 
-        int positiveNumbers=0;
-        int negativeNumbers=0;
-        int zeros=0;
-        for (int i=0; i<list.size();i++){
-            if (list.get(i)>0){
+        int positiveNumbers = 0;
+        int negativeNumbers = 0;
+        int zeros = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > 0) {
                 positiveNumbers++;
             }
-            if (list.get(i)<0){
+            if (list.get(i) < 0) {
                 negativeNumbers++;
             }
-            if (list.get(i)==0){
+            if (list.get(i) == 0) {
                 zeros++;
             }
         }
-        return "Positive: " +positiveNumbers + " Negative: " + negativeNumbers + " Zeros: " +zeros;
+        return "Positive: " + positiveNumbers + " Negative: " + negativeNumbers + " Zeros: " + zeros;
     }
 
+    // 9. Дан массив чисел. Поменять местами наибольший и наименьший элементы.
+    // 9 Array of integers ig given. Reverse the biggest and the smallest elements
+    public static List<Integer> changeBiggestWithSmallest(ArrayList<Integer> list) {
+        int biggest = list.get(0);
+        int smallest = list.get(0);
+        //find the biggest and the smallest
+        for (int i = 0; i < list.size(); i++) {
+            if (biggest<list.get(i)) {
+                biggest =list.get(i);
+            }
+            if (smallest>list.get(i)) {
+                smallest=list.get(i);
+            }
+        }
+        System.out.println("biggest number " + biggest);
+        System.out.println("smallest number " + smallest);
 
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == smallest) {
+                list.set(i,biggest);
+            }else if (list.get(i) == biggest) {
+                list.set(i,smallest);
+            }
+        }
 
+        System.out.println(list);
+        return list;
 
+    }
 }
+
 
