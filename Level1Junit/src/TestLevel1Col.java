@@ -92,4 +92,11 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedList,Level1Collections.changeBiggestWithSmallest(list));
     }
 
+    @Test //10
+    public void testPrintOnlyArrayIisLessOrEqualToI(){
+        List<Integer> list= new ArrayList<>(List.of(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7));
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(0,1,1,3,4,3,7));
+        Assert.assertEquals(expectedList,Level1Collections.printOnlyArrayIisLessOrEqualToI(list));
+    }
+
 }
