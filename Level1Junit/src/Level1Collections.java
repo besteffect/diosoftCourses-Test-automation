@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Level1Collections {
@@ -8,7 +9,9 @@ public class Level1Collections {
         //  changeAllElementsToZ(new ArrayList<>(Arrays.asList(1, 2, -5, 4, 6, 44, 3, -13, -4, 44)), 4);
         //  System.out.println("Before changed: 1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76");
         //  changeBiggestWithSmallest(new ArrayList<>(List.of(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76)));
-        printOnlyArrayIisLessOrEqualToI(new ArrayList<>(Arrays.asList(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7)));
+        //  printOnlyArrayIisLessOrEqualToI(new ArrayList<>(Arrays.asList(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7)));
+        //  printAllModuleEqualsM(new ArrayList<>(List.of(23, 12, 2, 1, 4, 1, 17, 11, 44)), 5, 2);
+        changeElementsPlaces(new ArrayList<>(List.of(25, 12, 2, 1, 4, 1, 4, 11, 44)));
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -186,6 +189,43 @@ public class Level1Collections {
         return finalList;
     }
 
+    //11. Дан массив чисел. Вывести те числа, у которых остаток от деления на число М равно L.
+    //11. Array of int is given. Print numbers, where remainder of division by M equals to L.
+    //(23, 12, 2, 1, 4, 1, 17, 11, 44) Expected: 12, 2, 17
+    public static List<Integer> printAllModuleEqualsM(List<Integer> list, int m, int l) {
+        int counter = 0;
+        int index = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % m == l) {
+                counter++;
+            }
+        }
+        List<Integer> finalList = new ArrayList<>(counter);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % m == l) {
+                finalList.add(index, list.get(i));
+                index++;
+            }
+        }
+        System.out.println(finalList);
+        return finalList;
+    }
+
+    //12. Дан массив чисел.  Поменять местами соседние элементы (аrray[0] и аrray[1], аrray[2] и аrray[3], …)
+    //12. Array of integers s given. Interchange the position of adjacent elements (аrray[0] and аrray[1], аrray[2] and аrray[3], …)
+    public static List<Integer> changeElementsPlaces(List<Integer> list) {
+        int temp = 0;
+        for (int i = 0; i < list.size() - 1; i++) {
+            temp = list.get(i);
+            list.set(i, list.get(i + 1));
+            list.set(i + 1, temp);
+            i = i + 1;
+        }
+            System.out.println("List after modification:" +list);
+
+        return list;
+
+    }
 }
 
 

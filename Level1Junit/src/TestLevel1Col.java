@@ -86,17 +86,33 @@ public class TestLevel1Col {
     }
 
     @Test //Task9
-    public void testChangeBiggestWithSmallest(){
+    public void testChangeBiggestWithSmallest() {
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76));
         List<Integer> expectedList = new ArrayList<>(List.of(76, 4, 76, 3, 1, 34, 3, 2, 53, 2, 43, 3, 43, 1));
-        Assert.assertEquals(expectedList,Level1Collections.changeBiggestWithSmallest(list));
+        Assert.assertEquals(expectedList, Level1Collections.changeBiggestWithSmallest(list));
     }
 
     @Test //10
-    public void testPrintOnlyArrayIisLessOrEqualToI(){
-        List<Integer> list= new ArrayList<>(List.of(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7));
-        List<Integer> expectedList = new ArrayList<>(Arrays.asList(0,1,1,3,4,3,7));
-        Assert.assertEquals(expectedList,Level1Collections.printOnlyArrayIisLessOrEqualToI(list));
+    public void testPrintOnlyArrayIisLessOrEqualToI() {
+        List<Integer> list = new ArrayList<>(List.of(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7));
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(0, 1, 1, 3, 4, 3, 7));
+        Assert.assertEquals(expectedList, Level1Collections.printOnlyArrayIisLessOrEqualToI(list));
+    }
+
+    @Test //11
+    public void testPrintAllModuleEqualsM() {
+        List<Integer> list = new ArrayList<>(List.of(23, 12, 2, 1, 4, 1, 17, 11, 44));
+        int m = 5;
+        int l = 2;
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(12, 2, 17));
+        Assert.assertEquals(expectedList, Level1Collections.printAllModuleEqualsM(list, m, l));
+    }
+
+    @Test //Task12
+    public void testChangeElementsPlaces() {
+        List<Integer> list = new ArrayList<>(List.of(25, 12, 2, 1, 4, 1, 4, 11, 44));
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(12, 25, 1, 2, 1, 4, 11, 4, 44));
+        Assert.assertEquals(expectedList, Level1Collections.changeElementsPlaces(list));
     }
 
 }
