@@ -115,6 +115,13 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedList, Level1Collections.changeElementsPlaces(list));
     }
 
+    @Test //Task
+    public void testPrintAllIncludingNull(){
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, -33, 2, 1, 4, 0, 11, 44));
+        List <Integer> expectedList = new ArrayList<>(List.of(1,4,-33,2,1,4,0));
+        Assert.assertEquals(expectedList,Level1Collections.printAllIncludingNull(list));
+    }
+
 
 
 }

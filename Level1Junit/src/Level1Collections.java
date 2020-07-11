@@ -246,7 +246,7 @@ public class Level1Collections {
         list1.add(0);
 
         System.out.println(list1);
-        return list;
+        return list1;
     }
 
 }

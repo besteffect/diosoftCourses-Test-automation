@@ -349,7 +349,6 @@ public class Level1 {
         int j = 0;
         while (array[i] != 0)//
         {   //for such case DO WHILE is used. It looks at all elements of array, until WHILE condition is finished.
-
             i++;
             count++;
         }
