@@ -349,10 +349,11 @@ public class Level1 {
         int j = 0;
         while (array[i] != 0)//
         {   //for such case DO WHILE is used. It looks at all elements of array, until WHILE condition is finished.
-            // System.out.println("New array is " + array[i]); //Printing out the last number till 0 is found. Additionally, 0 is printed
+
             i++;
             count++;
         }
+        // System.out.println("New array is " + array[i]); //Printing out the last number till 0 is found. Additionally, 0 is printed
         // System.out.println("New array is " + array[i]);//printing out zero number of array.
         count = count + 1; //Here we add 0 value to array
         int[] array1 = new int[count];

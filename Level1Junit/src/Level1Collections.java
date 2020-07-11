@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class Level1Collections {
@@ -11,7 +9,8 @@ public class Level1Collections {
         //  changeBiggestWithSmallest(new ArrayList<>(List.of(1, 4, 1, 3, 76, 34, 3, 2, 53, 2, 43, 3, 43, 76)));
         //  printOnlyArrayIisLessOrEqualToI(new ArrayList<>(Arrays.asList(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7)));
         //  printAllModuleEqualsM(new ArrayList<>(List.of(23, 12, 2, 1, 4, 1, 17, 11, 44)), 5, 2);
-        changeElementsPlaces(new ArrayList<>(List.of(25, 12, 2, 1, 4, 1, 4, 11, 44)));
+        // changeElementsPlaces(new ArrayList<>(List.of(25, 12, 2, 1, 4, 1, 4, 11, 44)));
+        printAllIncludingNull(List.of(1, 4, -33, 2, 1, 4, 0, 11, 44));
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -221,11 +220,35 @@ public class Level1Collections {
             list.set(i + 1, temp);
             i = i + 1;
         }
-            System.out.println("List after modification:" +list);
-
+        System.out.println("List after modification:" + list);
         return list;
-
     }
+
+    //13. Дан массив чисел, среди которых имеется один ноль. Вывести на печать все числа, включительно до нуля.
+    //13 Array of integers has 0. Print all elements up to 0.
+    public static List<Integer> printAllIncludingNull(List<Integer> list) {
+        int i = 0;
+        int j = 0;
+        int count = 0;
+        int count1 = 0;
+        while (list.get(i) != 0) {
+            i++;
+            count++;
+        }
+      //  count = count + 1;
+        System.out.println(count);
+        List<Integer> list1 = new ArrayList<>(count);
+        while (list.get(j) != 0) {
+            list1.add(count1, list.get(j));
+            j++;
+            count1++;
+        }
+        list1.add(0);
+
+        System.out.println(list1);
+        return list;
+    }
+
 }
 
 
