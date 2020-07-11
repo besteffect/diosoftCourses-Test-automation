@@ -115,11 +115,18 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedList, Level1Collections.changeElementsPlaces(list));
     }
 
-    @Test //Task
+    @Test //Task13
     public void testPrintAllIncludingNull(){
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, -33, 2, 1, 4, 0, 11, 44));
         List <Integer> expectedList = new ArrayList<>(List.of(1,4,-33,2,1,4,0));
         Assert.assertEquals(expectedList,Level1Collections.printAllIncludingNull(list));
+    }
+
+    @Test //14
+    public void testFindMaxEvenPlusMinOdd(){
+        List<Integer> list = new ArrayList<>(Arrays.asList(4, -34, -21, 2, 1, 4, 0, 11, 41));
+        int expectedResult=45;
+        Assert.assertEquals(expectedResult,Level1Collections.findMaxEvenPlusMinOdd(list));
     }
 
 

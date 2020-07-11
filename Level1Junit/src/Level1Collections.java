@@ -235,7 +235,7 @@ public class Level1Collections {
             i++;
             count++;
         }
-      //  count = count + 1;
+        //  count = count + 1;
         System.out.println(count);
         List<Integer> list1 = new ArrayList<>(count);
         while (list.get(j) != 0) {
@@ -249,6 +249,28 @@ public class Level1Collections {
         return list1;
     }
 
-}
+    //14. Дан массив чисел. Найти  mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).
+    //14. Array of integers is given. Find mаx(а[0], а[2], ..., а[2к]) + min(а[1], а[3], …, а[2к-1]).
+    //int[] array = {4, -34, -21, 2, 1, 4, 0, 11, 41};
+    public static int findMaxEvenPlusMinOdd(List<Integer> list) {
+        int sum = 0;
+        int biggestEven = 0;
+        int biggestOdd = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0 && list.get(i) > biggestEven) {
+                biggestEven = list.get(i);
+            }
 
+            if (list.get(i) % 2 == 1 && list.get(i) > biggestOdd) {
+                biggestOdd = list.get(i);
+            }
+            sum = biggestEven + biggestOdd;
+        }
+        System.out.println("Biggest even: " +biggestEven);
+        System.out.println("Biggest odd " +biggestOdd);
+        return sum;
+
+    }
+
+}
 
