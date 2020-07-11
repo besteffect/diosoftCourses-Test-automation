@@ -129,6 +129,14 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedResult,Level1Collections.findMaxEvenPlusMinOdd(list));
     }
 
+    @Test //Task15
+    public void testFindMultiplOfNumbersBuggerThenM() {
+        List<Integer> list =new ArrayList<>(List.of(4, 10, 10, 2, 1, 4, 11, 21));
+        int m = 10;
+        int expectedResult = 231; //11*21
+        Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfNumbersBuggerThenM(list, m));
+    }
+
 
 
 }

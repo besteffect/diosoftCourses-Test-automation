@@ -266,10 +266,26 @@ public class Level1Collections {
             }
             sum = biggestEven + biggestOdd;
         }
-        System.out.println("Biggest even: " +biggestEven);
-        System.out.println("Biggest odd " +biggestOdd);
+        System.out.println("Biggest even: " + biggestEven);
+        System.out.println("Biggest odd " + biggestOdd);
         return sum;
+    }
 
+    //15 Дан массив целых положительных чисел. Найти произведение только тех чисел, которые больше заданного числа М. Если таких нет, то выдать сообщение об этом.
+    //15. Given an array of positive integers. Find a product onlyof numbers which are begger than a given M. If there are no such numbers show error message
+    public static int findMultiplOfNumbersBuggerThenM(List<Integer> list, int m) {
+        int integer = 1;
+        int numbersQuantity = 0;
+        for (Integer value : list) {
+            if (value > m) {
+                integer *= value;
+                numbersQuantity++;
+            }
+        }
+        if (numbersQuantity == 0) {
+            System.out.println("There are not numbers greater than " + m);
+        }
+        return integer;
     }
 
 }
