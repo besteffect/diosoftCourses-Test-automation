@@ -288,5 +288,26 @@ public class Level1Collections {
         return integer;
     }
 
+
+    //16 Дан массив положительных и отрицательных чисел. Заменить нулями те числа, величина которых по модулю больше максимального числа (|a[i]| > max{ a[0], a[1], ..., a[n]})
+    //16. Given an array of positive and negative numbers. Replace with 0 those numbers whose magnitude is greater than the maximum number (|a[i]| > max{ a[0], a[1], ..., a[n]})
+    public static List<Integer> findbiggestnumberbyModule(List<Integer> list) {
+        int maxNumber = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > maxNumber) {
+                maxNumber = list.get(i);
+            }
+        }
+        System.out.println("Max number: " + maxNumber);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) < 0) {
+                list.set(i, list.get(i) * (-1));
+                if (list.get(i) > maxNumber) ;
+                list.set(i, 0);
+            }
+        }
+        return list;
+    }
+
 }
 

@@ -137,6 +137,13 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfNumbersBuggerThenM(list, m));
     }
 
+    @Test //16
+    public void testFindBiggestNumberByModule() {
+        List<Integer> list= new ArrayList<>(List.of(4, -36, -40, 2, 1, 35, 11, 21));
+        List<Integer> expectedList= new ArrayList<>(Arrays.asList(4, 0, 0, 2, 1, 35, 11, 21));
+        Assert.assertEquals(expectedList, Level1Collections.findbiggestnumberbyModule(list));
+    }
+
 
 
 }
