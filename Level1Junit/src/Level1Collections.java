@@ -10,7 +10,8 @@ public class Level1Collections {
         //  printOnlyArrayIisLessOrEqualToI(new ArrayList<>(Arrays.asList(0, 3, 1, 1, 3, 6, 4, 11, 3, 39, 7)));
         //  printAllModuleEqualsM(new ArrayList<>(List.of(23, 12, 2, 1, 4, 1, 17, 11, 44)), 5, 2);
         // changeElementsPlaces(new ArrayList<>(List.of(25, 12, 2, 1, 4, 1, 4, 11, 44)));
-        printAllIncludingNull(List.of(1, 4, -33, 2, 1, 4, 0, 11, 44));
+        // printAllIncludingNull(List.of(1, 4, -33, 2, 1, 4, 0, 11, 44));
+        findFirstMaxElementOfArray(new ArrayList<>(List.of(2, -5, 45, 2, -1, 5, 10, 10, 45, 5)));
     }
 
     // 2 Дан целочисленный массив чисел. Найти сумму элементов, кратных данному числу K.
@@ -336,6 +337,26 @@ public class Level1Collections {
 
             return result;
         } else return result1;
+    }
+
+    // 18 Дан массив чисел. Среди них есть равные. Найти первый максимальный элемент массива и заменить его нулем.
+    //18. An array of numbers is given. Among them are equal numbers. Find the first maximum element of the array and replace it with zero.
+    public static ArrayList<Integer> findFirstMaxElementOfArray(ArrayList<Integer> list) {
+        int firstMax = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > firstMax) {
+                firstMax = list.get(i);
+            }
+        }
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) == firstMax) {
+                list.set(i, 0);
+                break;
+            }
+        }
+        System.out.println(firstMax);
+        System.out.println(list);
+        return list;
     }
 }
 
