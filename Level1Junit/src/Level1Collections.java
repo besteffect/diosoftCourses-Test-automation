@@ -309,5 +309,33 @@ public class Level1Collections {
         return list;
     }
 
+    /*17. Дан массив чисел с положительными и отрицательными элементами. Вычислить произведение отрицательных элементов
+    P1 и произведение положительных элементов Р2. Сравнить модуль Р2 с модулем Р1 и указать, какое из произведений по модулю больше.
+    17 An array of numbers with positive and negative elements is given. Calculate the product of negative elements P1
+    and the product of positive elements P2. Compare the module P2 with the module P1 and indicate which of the products modulo is bigger.
+     */
+    public static String findMultiplOfMinAnMinusNumbers(List<Integer> list) {
+        int positiveNumbers = 1;
+        int negativeNumbers = 1;
+        String result = "Negative numbers multiplication is bigger";
+        String result1 = "Positive numbers multiplication is bigger";
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > 0) {
+                positiveNumbers *= list.get(i);
+            }
+            if (list.get(i) < 0) {
+                negativeNumbers *= list.get(i);
+            }
+        }
+        if (negativeNumbers < 0) {
+            negativeNumbers = -negativeNumbers;
+        }
+        System.out.println("Positive numbers multiplication: " + positiveNumbers);
+        System.out.println("Negative numbers multiplication: " + negativeNumbers);
+        if (negativeNumbers > positiveNumbers) {
+
+            return result;
+        } else return result1;
+    }
 }
 

@@ -116,22 +116,22 @@ public class TestLevel1Col {
     }
 
     @Test //Task13
-    public void testPrintAllIncludingNull(){
+    public void testPrintAllIncludingNull() {
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, -33, 2, 1, 4, 0, 11, 44));
-        List <Integer> expectedList = new ArrayList<>(List.of(1,4,-33,2,1,4,0));
-        Assert.assertEquals(expectedList,Level1Collections.printAllIncludingNull(list));
+        List<Integer> expectedList = new ArrayList<>(List.of(1, 4, -33, 2, 1, 4, 0));
+        Assert.assertEquals(expectedList, Level1Collections.printAllIncludingNull(list));
     }
 
     @Test //14
-    public void testFindMaxEvenPlusMinOdd(){
+    public void testFindMaxEvenPlusMinOdd() {
         List<Integer> list = new ArrayList<>(Arrays.asList(4, -34, -21, 2, 1, 4, 0, 11, 41));
-        int expectedResult=45;
-        Assert.assertEquals(expectedResult,Level1Collections.findMaxEvenPlusMinOdd(list));
+        int expectedResult = 45;
+        Assert.assertEquals(expectedResult, Level1Collections.findMaxEvenPlusMinOdd(list));
     }
 
     @Test //Task15
     public void testFindMultiplOfNumbersBuggerThenM() {
-        List<Integer> list =new ArrayList<>(List.of(4, 10, 10, 2, 1, 4, 11, 21));
+        List<Integer> list = new ArrayList<>(List.of(4, 10, 10, 2, 1, 4, 11, 21));
         int m = 10;
         int expectedResult = 231; //11*21
         Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfNumbersBuggerThenM(list, m));
@@ -139,11 +139,15 @@ public class TestLevel1Col {
 
     @Test //16
     public void testFindBiggestNumberByModule() {
-        List<Integer> list= new ArrayList<>(List.of(4, -36, -40, 2, 1, 35, 11, 21));
-        List<Integer> expectedList= new ArrayList<>(Arrays.asList(4, 0, 0, 2, 1, 35, 11, 21));
+        List<Integer> list = new ArrayList<>(List.of(4, -36, -40, 2, 1, 35, 11, 21));
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(4, 0, 0, 2, 1, 35, 11, 21));
         Assert.assertEquals(expectedList, Level1Collections.findbiggestnumberbyModule(list));
     }
 
-
-
+    @Test //17
+    public void testFindMultiplOfMinAnMinusNumbers() {
+        List<Integer> list = new ArrayList<>(Arrays.asList(2, -1, -401, 2, -1, 1, 10, 10)); //positive 400
+        String expectedResult = "Negative numbers multiplication is bigger";
+        Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfMinAnMinusNumbers(list));
+    }
 }
