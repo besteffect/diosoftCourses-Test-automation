@@ -150,4 +150,13 @@ public class TestLevel1Col {
         String expectedResult = "Negative numbers multiplication is bigger";
         Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfMinAnMinusNumbers(list));
     }
+
+
+    @Test //19
+    public void testCreateNewArrayWhenEndsK() {
+        List<Integer> list = new ArrayList<>(List.of(2, -5, 45, 2, -1, 5, 16, 10, 125, 1015, 45, 5, 12505));
+        int k = 5;
+        List<Integer> expectedList = new ArrayList<>(List.of(-5,45,5,125,1015,45,5,12505));
+        Assert.assertEquals(expectedList,Level1Collections.createNewArrayWhenEndsK(list,k));
+    }
 }

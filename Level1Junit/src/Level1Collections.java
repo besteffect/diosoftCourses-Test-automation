@@ -358,5 +358,34 @@ public class Level1Collections {
         System.out.println(list);
         return list;
     }
+
+    //19. Дан массив чиcел. Образовать новый массив, элементами которого будут элементы исходного, оканчивающиеся на цифру k.
+    //19. An array of numbers is given. Create a new array, the elements of which will be the elements of the original, with k in the end.
+    public static List<Integer> createNewArrayWhenEndsK(List<Integer> list, int k) {
+        int elementsNumber = 0;
+        int list1Indexes = 0;
+        for (int i = 0; i < list.size(); i++) {
+            int a = list.get(i) % 10;
+            if (a < 0) {
+                a = -a;
+            }
+            if (a == k) {
+                elementsNumber++;
+            }
+        }
+        List<Integer> list1 = new ArrayList<>(elementsNumber);
+        for (int i = 0; i < list.size(); i++) {
+            int b = list.get(i) % 10;
+            if (b < 0) {
+                b = -b;
+            }
+            if (b == k) {
+                list1.add(list1Indexes, list.get(i));
+                list1Indexes++;
+            }
+        }
+        return list1;
+    }
 }
+
 
