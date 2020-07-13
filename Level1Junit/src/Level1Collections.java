@@ -341,7 +341,7 @@ public class Level1Collections {
 
     // 18 Дан массив чисел. Среди них есть равные. Найти первый максимальный элемент массива и заменить его нулем.
     //18. An array of numbers is given. Among them are equal numbers. Find the first maximum element of the array and replace it with zero.
-    public static ArrayList<Integer> findFirstMaxElementOfArray(ArrayList<Integer> list) {
+    public static List<Integer> findFirstMaxElementOfArray(List<Integer> list) {
         int firstMax = 0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) > firstMax) {

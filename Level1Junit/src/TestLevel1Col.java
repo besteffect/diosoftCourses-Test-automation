@@ -151,12 +151,18 @@ public class TestLevel1Col {
         Assert.assertEquals(expectedResult, Level1Collections.findMultiplOfMinAnMinusNumbers(list));
     }
 
+    @Test //18
+    public void testFindFirstMaxElementOfArray() {
+        List<Integer> list = new ArrayList<Integer>(List.of(2, -5, 45, 2, -1, 5, 10, 10, 45, 5));
+        List<Integer> expectedList = new ArrayList<Integer>(List.of(2, -5, 0, 2, -1, 5, 10, 10, 45, 5));
+        Assert.assertEquals(expectedList, Level1Collections.findFirstMaxElementOfArray(list));
+    }
 
     @Test //19
     public void testCreateNewArrayWhenEndsK() {
         List<Integer> list = new ArrayList<>(List.of(2, -5, 45, 2, -1, 5, 16, 10, 125, 1015, 45, 5, 12505));
         int k = 5;
-        List<Integer> expectedList = new ArrayList<>(List.of(-5,45,5,125,1015,45,5,12505));
-        Assert.assertEquals(expectedList,Level1Collections.createNewArrayWhenEndsK(list,k));
+        List<Integer> expectedList = new ArrayList<>(List.of(-5, 45, 5, 125, 1015, 45, 5, 12505));
+        Assert.assertEquals(expectedList, Level1Collections.createNewArrayWhenEndsK(list, k));
     }
 }
