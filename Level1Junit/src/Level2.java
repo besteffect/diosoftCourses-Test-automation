@@ -14,6 +14,7 @@ public class Level2 {
      */
     public static void main(String[] args) {
         sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
+        writeMonth(3);
     }
 
     // 1. Дан массив чисел. Отсортировать массив по возрастанию.
@@ -34,5 +35,52 @@ public class Level2 {
         return array;
     }
 
+    // 2. Вывести название месяца по его номеру. Написать метод, который будет принимать на вход число и выводить стрингу.
+    public static String writeMonth(int number) {
+        String month;
+        switch (number) {
+            case 1:
+                month = "January";
+                break;
+            case 2:
+                month = "February";
+                break;
+            case 3:
+                month = "March";
+                break;
+            case 4:
+                month = "April";
+                break;
+            case 5:
+                month = "May";
+                break;
+            case 6:
+                month = "June";
+                break;
+            case 7:
+                month = "July";
+                break;
+            case 8:
+                month = "August";
+                break;
+            case 9:
+                month = "September";
+                break;
+            case 10:
+                month = "October";
+                break;
+            case 11:
+                month = "November";
+                break;
+            case 12:
+                month = "December";
+                break;
+            default:
+                month = "Incorrect input";
+        }
+
+        System.out.println("\n" + month);
+        return month;
+    }
 
 }
