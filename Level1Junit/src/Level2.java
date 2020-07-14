@@ -1,8 +1,6 @@
 public class Level2 {
     /*
 
-2. Вывести название месяца по его номеру. Написать метод, который будет принимать на вход число и выводить стрингу.
-Пример: получили 7, вывели July.
 3. Дан массив букв. Вывести массив, где все большие буквы будут заменены на маленькие.
 Пример: получили {‘a’, ‘Z’, ‘E’, ‘d’}, вывели {‘a’, ‘z’, ‘e’, ‘d’}.
 4. Дано число. Вывести все простые числа в диапазоне от 2 до этого числа включительно.
@@ -15,6 +13,7 @@ public class Level2 {
     public static void main(String[] args) {
         sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
         writeMonth(3);
+        makeLowerCase(new String[]{"d", "f", "F", "A", "a", "v", "W"});
     }
 
     // 1. Дан массив чисел. Отсортировать массив по возрастанию.
@@ -83,4 +82,29 @@ public class Level2 {
         return month;
     }
 
+    // 3. Дан массив букв. Вывести массив, где все большие буквы будут заменены на маленькие.
+    //        Пример: получили {‘a’, ‘Z’, ‘E’, ‘d’}, вывели {‘a’, ‘z’, ‘e’, ‘d’}.
+    public static char[] makeLowerCase(String[] input) {
+
+        StringBuilder builder = new StringBuilder();
+        for (String s : input) {
+            builder.append(s);
+        }
+        String fullString = builder.toString();
+        char currentCharacter = 0;
+        char[] output = new char[fullString.length()];
+        for (int i = 0; i < fullString.length(); i++) {
+            currentCharacter = fullString.charAt(i);
+            if (Character.isUpperCase(currentCharacter)) {
+                output[i] = Character.toLowerCase(currentCharacter);
+
+            } else {
+                output[i] = currentCharacter;
+            }
+        }
+        for (int j = 0; j < output.length; j++) {
+            System.out.println(output[j]);
+        }
+        return output;
+    }
 }
