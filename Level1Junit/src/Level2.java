@@ -1,8 +1,5 @@
 public class Level2 {
     /*
-
-3. Дан массив букв. Вывести массив, где все большие буквы будут заменены на маленькие.
-Пример: получили {‘a’, ‘Z’, ‘E’, ‘d’}, вывели {‘a’, ‘z’, ‘e’, ‘d’}.
 4. Дано число. Вывести все простые числа в диапазоне от 2 до этого числа включительно.
 5. Дано две строки. Определить является ли вторая строка подстрокой в строке.
 Для написания метода НЕ ИСПОЛЬЗОВАТЬ стандартные методы по работе с подстрокой Java. Пример: “abcdef” и “bcd”, метод
@@ -14,6 +11,7 @@ public class Level2 {
         sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
         writeMonth(3);
         makeLowerCase(new String[]{"d", "f", "F", "A", "a", "v", "W"});
+        printPrimeNumbers(47);
     }
 
     // 1. Дан массив чисел. Отсортировать массив по возрастанию.
@@ -106,5 +104,47 @@ public class Level2 {
             System.out.println(output[j]);
         }
         return output;
+    }
+
+    //4. Дано число. Вывести все простые числа в диапазоне от 2 до этого числа включительно.
+    public static int[] printPrimeNumbers(int input) {
+        int[] array = new int[input + 1]; //create array with input number of indexes+number itself
+        int count = 0;
+        int count1 = 0;
+        for (int i = 0; i < array.length; i++) { //fill array with numbers
+            array[i] = i;
+            count++;
+        }
+        for (int item : array) {
+            System.out.print(" " + item); //print array
+        }
+
+
+        int[] finalArray = new int[input + 1];
+        System.out.println("\n" + "Number of elements in our array: " + count);
+//check if number if divisions by j is not bigger than 2
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 1) {
+                boolean isPrime = true;
+                for (int j = 0; j < i; j++) {
+                    if (array[j] > 1 && array[i] % array[j] == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) {
+                    finalArray[count1++] = array[i];
+                }
+
+            }
+        }
+        for (int item : finalArray) {
+            if (item!=0)
+            System.out.print(item + " ");
+            else {
+                break;
+            }
+        }
+        return finalArray;
     }
 }
