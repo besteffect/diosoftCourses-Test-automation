@@ -1,6 +1,5 @@
 public class Level2 {
     /*
-4. Дано число. Вывести все простые числа в диапазоне от 2 до этого числа включительно.
 5. Дано две строки. Определить является ли вторая строка подстрокой в строке.
 Для написания метода НЕ ИСПОЛЬЗОВАТЬ стандартные методы по работе с подстрокой Java. Пример: “abcdef” и “bcd”, метод
 должен ввернуть true.
@@ -8,10 +7,11 @@ public class Level2 {
 учитывая приоритет операций. Операции только +,-,*,/.  Например: получаем на вход «2+5+9*10+10/5-12», возвращаем 87.
      */
     public static void main(String[] args) {
-        sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
-        writeMonth(3);
-        makeLowerCase(new String[]{"d", "f", "F", "A", "a", "v", "W"});
-        printPrimeNumbers(47);
+        //  sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
+        // writeMonth(3);
+        // makeLowerCase(new String[]{"d", "f", "F", "A", "a", "v", "W"});
+        //  printPrimeNumbers(47);
+        System.out.println(defineSubstring("Hi name is", "name"));
     }
 
     // 1. Дан массив чисел. Отсортировать массив по возрастанию.
@@ -139,12 +139,62 @@ public class Level2 {
             }
         }
         for (int item : finalArray) {
-            if (item!=0)
-            System.out.print(item + " ");
+            if (item != 0)
+                System.out.print(item + " ");
             else {
                 break;
             }
         }
         return finalArray;
+    }
+
+    //    5. Дано две строки. Определить является ли вторая строка подстрокой в строке.
+//    Для написания метода НЕ ИСПОЛЬЗОВАТЬ стандартные методы по работе с подстрокой Java. Пример: “abcdef” и “bcd”, метод
+//    должен ввернуть true.
+/*    public static boolean defineSubstring(String mainString, String substr) {
+        int k = 0;
+        if (mainString.length() < substr.length()) {
+            return false;
+        }
+        boolean isSubstring = false;
+        char[] mainArChar = mainString.toCharArray();
+        char[] subArChar = substr.toCharArray();
+        for (int i = 0; i < mainArChar.length - 1; i++) {
+            if (mainArChar[i] == subArChar[k] && k < subArChar.length - 1) {
+                k++;
+                isSubstring = true;
+                if (k == subArChar.length - 1) {
+                    isSubstring = true;
+                    break;
+                }
+            } else {
+                isSubstring = false;
+                //break;
+                //System.out.print(isSubstring);
+
+            }
+        }
+        System.out.print(isSubstring);
+        return isSubstring;
+    }
+*/
+     static boolean defineSubstring(String mainString, String substr) {
+        int matchCount = 0;
+        boolean isSubString=true;
+        if (mainString.length() < substr.length()) {
+            return false;
+        }
+        char[] mainArChar = mainString.toCharArray();
+        char[] subArChar = substr.toCharArray();
+        for (int i = 0; i < mainArChar.length; i++) {
+            if (mainArChar[i] == subArChar[matchCount]) {
+                ++matchCount;
+            } else matchCount = 0;
+
+            if (matchCount == subArChar.length) {
+                return true;
+            }
+        }
+        return false;
     }
 }
