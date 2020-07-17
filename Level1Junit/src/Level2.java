@@ -6,12 +6,12 @@ public class Level2 {
 6.  Дана строка с набором операций. Написать метод, который будет рассчитывать результат выполнения всех операций,
 учитывая приоритет операций. Операции только +,-,*,/.  Например: получаем на вход «2+5+9*10+10/5-12», возвращаем 87.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         //  sortArrayByIncrease(new int[]{0, -1, 4, 1, 52, 2, 5, 6, -4, 67, 0, 0, -33});
         // writeMonth(3);
         // makeLowerCase(new String[]{"d", "f", "F", "A", "a", "v", "W"});
         //  printPrimeNumbers(47);
-        System.out.println(defineSubstring("Hi name is", "name"));
+        System.out.println(defineSubstring("Hi name is name", "nme"));
     }
 
     // 1. Дан массив чисел. Отсортировать массив по возрастанию.
@@ -178,9 +178,12 @@ public class Level2 {
         return isSubstring;
     }
 */
-     static boolean defineSubstring(String mainString, String substr) {
+     static boolean defineSubstring(String mainString, String substr) throws IndexOutOfBoundsException {
         int matchCount = 0;
         boolean isSubString=true;
+        if (substr.length()==0){
+            throw new IndexOutOfBoundsException("Subsring has 0 length");
+        }
         if (mainString.length() < substr.length()) {
             return false;
         }
